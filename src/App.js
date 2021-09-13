@@ -4,6 +4,7 @@ import TextForm from "./components/TextForm";
 import About from "./components/About";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -43,8 +44,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Switch>
-            {/* /users --> Component 1
-        /users/home --> Component 2 */}
+            {/* /users --> Component 1 /users/home --> Component 2 */}
             <Route exact path="/about">
               <About mode={mode} />
             </Route>
