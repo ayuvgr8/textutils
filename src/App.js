@@ -26,6 +26,14 @@ function App() {
       setMode("dark");
       document.body.style.backgroundColor = "#042743";
       showAlert("Dark mode has been enabled", "success");
+      
+      // setInterval(() => {
+      //   document.title = 'TextUtils is Amazing Mode';
+      // }, 2000);
+      // setInterval(() => {
+      //   document.title = 'Install TextUtils Now';
+      // }, 1500);
+
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
